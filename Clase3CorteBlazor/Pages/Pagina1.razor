@@ -86,7 +86,7 @@
         var newBook = new HttpRequestMessage(HttpMethod.Post, "Biblioteca/Agregar?Titulo=New&Editorial=New&Autor=New&Pagina=1&Descripcion=New");
         var answer = await _client.SendAsync(newBook);
 
-        SnackbarService.Add("Added data mate ;D", Severity.Success);
+        SnackbarService.Add("Archivo Añadido", Severity.Success);
     }
 
     // events
